@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngfreelancers"
+    }
+  },
+  "defaultProject": "ngfreelancers",
+  "cli": {
+    "analytics": false
+  }
 }
