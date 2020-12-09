@@ -11,6 +11,6 @@ import { FooterComponent } from './components/footer/footer.component'
     CommonModule,
     FontAwesomeModule
   ],
-  exports: [HeaderComponent]
+  exports: [HeaderComponent, FooterComponent]
 })
 export class CoreModule { }

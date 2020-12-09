@@ -1,4 +1,5 @@
 <app-header></app-header>
+
 <!-- container -->
 <div class="container py-6" role="container">
   <div class="columns">
@@ -25,12 +26,43 @@
           <button class="button is-primary mt-4">Sign up</button>
         </div>
       </div>
-
     </div>
 
     <div class="column">
+      <!-- if else with ngIf example -->
+      <div *ngIf="show; then ifBlock else elseBlock">I am the boss here</div>
+      <ng-template #ifBlock>I am the if block</ng-template>
+      <ng-template #elseBlock>I am the else block</ng-template>
+
+      <!-- If else with ng-template -->
+      <ng-template [ngIf]="color === 'green'"><p>I am a green color</p></ng-template>
+      <ng-template [ngIf]="color === 'red'"><p>I am a red color</p></ng-template>
+      <ng-template [ngIf]="color === 'blue'"><p>I am a blue color</p></ng-template>
+
+      <!-- Switch example -->
+      <div [ngSwitch]="color">
+        <div *ngSwitchCase="'green'" style="color: green">I am the green lantern</div>
+        <div *ngSwitchCase="'red'" [style.color]="'red'">I am the red lantern</div>
+        <div *ngSwitchCase="'blue'" [ngStyle]="{color: 'blue'}">I am the blue lantern</div>
+      </div>
+
+      <!-- List items using ngFor loop -->
+      <ul>
+        <li *ngFor="let food of foods">
+          {{food}}
+        </li>
+      </ul>
+
+      <form #testForm="ngForm" (ngSubmit)="handleSubmit(testForm.value)">
+        <p><input type="text" name="email" ngModel placeholder="Email"></p>
+        <p><input type="text" name="name" ngModel placeholder="Name"></p>
+        <button>Submit</button>
+      </form>
     </div>
+  </div>
 </div>
+
+<app-footer></app-footer>
 
 <!-- Router outlet -->
 <router-outlet></router-outlet>
