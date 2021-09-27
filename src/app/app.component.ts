@@ -1,34 +1,23 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title: string = 'Freelancers';
-  faCoffee = faUmbrellaBeach;
+  foods: string[] = ['Freelancers'];
 
-  email: string
-  password: string
+  constructor() {}
 
-  foods = ["Pasta", "Beans", "Salad", "Turkey", "Sandwich"]
-  show = true
-  color = "red"
-
-  constructor() { }
-
-  changeTitle(title: string) {
-    this.title = title;
+  triggerData(data) {
+    console.warn(data);
   }
 
-  handleChange(event){
-    const {name, value} = event.target
-    console.log(name, "name form")
-    console.log(value, "value form")
-  }
-  handleSubmit(value){
-    console.log(value, "all form values")
-  }
+  sendMessage = () => {
+    console.log('I am sending a message');
+  };
 }

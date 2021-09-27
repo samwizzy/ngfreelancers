@@ -1,0 +1,50 @@
+<div class="container py-6">
+  <div class="columns">
+    <div class="column is-two-fifths">
+      <h3 class="title is-3">Login to {{ title }}</h3>
+      <h5 class="subtitle is-5">We are glad to have you back</h5>
+
+      <form>
+        <div class="field">
+          <label class="label" for="email">Email</label>
+          <div class="control">
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="email"
+              (change)="handleChange($event)"
+              placeholder="e.g. alexsmith@gmail.com"
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="name">Password</label>
+          <div class="control">
+            <input
+              class="input"
+              id="password"
+              name="password"
+              type="password"
+              (change)="handleChange($event)"
+              placeholder="***"
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary mt-4" [disabled]="!form.email">
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="column">
+      <img src="assets/images/login.svg" alt="" />
+    </div>
+  </div>
+</div>

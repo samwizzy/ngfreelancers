@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Ezone",
+      "description": "This is great project",
+      "date_created": "2021-09-23T15:35:56",
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Alliance in Motion",
+      "description": "This is great project",
+      "date_created": "2021-09-23T15:35:56",
+      "user_id": 1
+    },
+    {
+      "id": 3,
+      "title": "EasyGo",
+      "description": "This is great project",
+      "date_created": "2021-09-23T15:35:56",
+      "user_id": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.example-card {
+  max-width: 350px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.mat-divider {
+  margin: 4rem 0;
+}

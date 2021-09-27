@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./styles/variables.scss";
 
-@import "node_modules/bulma/bulma.sass";
+// @import "node_modules/bulma/bulma.sass";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
