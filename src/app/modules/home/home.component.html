@@ -1,5 +1,5 @@
 <div class="container py-6">
-  <section class="section has-text-centered mb-6">
+  <section class="section text-center mb-5">
     <h1 class="title">All Projects</h1>
     <h2 class="subtitle">
       A simple container to divide your page into <strong>sections</strong>,
@@ -35,42 +35,4 @@
   </div>
 
   <mat-divider></mat-divider>
-
-  <section class="section has-text-centered mb-6">
-    <h1 class="title">Favorite Projects</h1>
-    <h2 class="subtitle">
-      A simple container to divide your page into <strong>sections</strong>,
-      like the one you're currently reading.
-    </h2>
-    <button mat-raised-button color="primary">Get started</button>
-  </section>
-
-  <mat-grid-list cols="3" rowHeight="600px" gutterSize="2rem">
-    <mat-grid-tile *ngFor="let project of projects">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{ project.title }}</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img
-          mat-card-image
-          src="https://image.freepik.com/free-photo/woman-walking-her-bicycle_23-2148760904.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
 </div>
